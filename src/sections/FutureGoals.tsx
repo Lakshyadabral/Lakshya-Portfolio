@@ -36,11 +36,11 @@ export const FutureGoals = () => {
       <div className="container">
       <SectionHeader eyebrow="Future Roadmap" title="Where I See Myself Ahead" description="Don't just take my word for it. See what I aim to achieve in the coming years."/>
       <div className="mt-12 lg:mt-20 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] py-4 -my-4">
-      <div className="flex gap-8 pr-8 flex-none animate-move-left [animation-duration:90s] hover:[animation-play-state:paused]">
+      <div className="flex gap-8 pr-8 flex-none animate-move-left [animation-duration:50s] hover:[animation-play-state:paused]">
        {[...new Array(2)].fill(0).map(( _, index ) => (
     <Fragment key={index}>
           {goals.map((goal) => (
-                <Card key={goal.name} className="max-w-xs md:max-w-md p-6 md:p-8 lg:max-w-2xl lg:p-10 hover:-rotate-3 transition duration-300">
+                <Card key={goal.name} className="max-w-xs md:max-w-md p-6 md:p-8 lg:max-w-2xl lg:p-10 hover:-rotate-3 transition duration-500">
                   <div className="flex gap-4 items-center">
                 <div className="size-14 bg-gray-700 inline-flex items-center justify-center rounded-full flex-shrink-0">
                 <Image src={goal.avatar} alt={goal.name} className="max-h-full" />
