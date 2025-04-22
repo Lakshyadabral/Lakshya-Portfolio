@@ -12,6 +12,18 @@ import { Card } from "@/components/Card";
 
 const portfolioProjects = [
   {
+    company: "WeVibe",
+    year: "2025",
+    title: "AI-Powered Roommate Matching App",
+    results: [
+      { title: "Real-time roommate matching using lifestyle and habit preferences" },
+      { title: "AI-based compatibility scoring powered by Together API" },
+      { title: "Live chat and notifications with Socket.io integration" },
+    ],
+    link: "https://we-vibe-green.vercel.app/auth/sign-in",
+    image: lightSaasLandingPage,
+  },
+  {
     company: "Wanderlust",
     year: "2025",
     title: "Full Stack Listing Platform",
@@ -22,18 +34,6 @@ const portfolioProjects = [
     ],
     link: "https://wanderlust-demo-production.up.railway.app/listings",
     image: darkSaasLandingPage,
-  },
-  {
-    company: "Acme Creatives",
-    year: "2025",
-    title: "Digital Marketing Company",
-    results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
-    ],
-    link: "https://acme-creative.netlify.app/",
-    image: lightSaasLandingPage,
   },
   {
     company: "Music Album App",
