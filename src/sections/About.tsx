@@ -153,7 +153,7 @@ const constraintRef = useRef(null);
       
       <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-5 gap-8">
         <Card className = "h-[320px] p-0 flex flex-col col-span-3 lg:col-span-2">
-        <CardHeader title="Beyond The Code" description="Explore my intrestes and hobbies beyond the digital realm " 
+        <CardHeader title="Beyond The Code" description="Explore my interests and hobbies beyond the digital realm " 
         className="px-6 py-6"/>
 
               <div className="relative flex-1" ref={constraintRef}> 
