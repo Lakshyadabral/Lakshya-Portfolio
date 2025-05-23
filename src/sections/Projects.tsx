@@ -32,7 +32,7 @@ const portfolioProjects = [
       { title: "Robust data management powered by MongoDB" },
       { title: "Secure user authentication using Passport.js" },
     ],
-    link: "https://wanderlust-demo-production.up.railway.app/listings",
+    link: "https://wanderlust-fullstack-app.onrender.com/listings",
     image: darkSaasLandingPage,
   },
   {
@@ -44,7 +44,7 @@ const portfolioProjects = [
       { title: "Real-time server-side rendering with Express.js" },
       { title: "Robust input validation using Joi for secure data handling" },
     ],
-    link: "https://music-album-app-production.up.railway.app/",
+    link: "https://music-album-app.onrender.com/",
     image: aiStartupLandingPage,
   },
 ];
