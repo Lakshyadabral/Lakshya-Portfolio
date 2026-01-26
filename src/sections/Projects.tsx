@@ -7,7 +7,7 @@ import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg'
 import grainImage from '@/assets/images/grain.jpg'
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
-
+import GithubIcon from "@/assets/icons/GithubIcon.svg"
 
 
 const portfolioProjects = [
@@ -21,6 +21,7 @@ const portfolioProjects = [
       { title: "Live chat and notifications with Socket.io integration" },
     ],
     link: "https://we-vibe-green.vercel.app/auth/sign-in",
+    github: "https://github.com/Lakshyadabral/WeVibe/tree/main",
     image: lightSaasLandingPage,
   },
   {
@@ -33,18 +34,21 @@ const portfolioProjects = [
       { title: "Secure user authentication using Passport.js" },
     ],
     link: "https://wanderlust-fullstack-app.onrender.com/listings",
+    github: "https://github.com/Lakshyadabral/wanderlust-fullstack-app/tree/main",
     image: darkSaasLandingPage,
   },
   {
-    company: "Music Album App",
-    year: "2025",
-    title: "Music Streaming & Album Management",
+    company: "SecureTrust Bank (Simulated)",
+    year: "2026",
+    title: "ML-Based Loan Approval Predictor",
     results: [
-      { title: "Dynamic album management: add, view, and edit albums" },
-      { title: "Real-time server-side rendering with Express.js" },
-      { title: "Robust input validation using Joi for secure data handling" },
+      { title: "Built an end-to-end loan approval system using Logistic Regression, KNN, and Naive Bayes" },
+      { title: "Implemented a full ML pipeline with preprocessing, feature engineering, and model evaluation" },
+      { title: "Deployed an interactive Streamlit app for real-time loan approval predictions with confidence scores" },
     ],
-    link: "https://music-album-app.onrender.com/",
+    link: "https://lakshyadabral-ml-based-loan-approval-predictor-app-w67pmu.streamlit.app/",
+    github: "https://github.com/Lakshyadabral/ML-Based-Loan-Approval-Predictor",
+
     image: aiStartupLandingPage,
   },
 ];
@@ -78,13 +82,22 @@ export const ProjectsSection = () => {
                 </li>
             ))}
           </ul>
+        <div className="flex flex-col md:flex-row gap-4 mt-8">
           <a href={project.link} target="_blank" rel="noopener noreferrer">
-          <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
-           <span> Visit Live Site
-           </span>
-           <ArrowUpRightIcon className="size-4"/>
-           </button>
+            <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2">
+              <span>Visit Live Site</span>
+              <ArrowUpRightIcon className="size-4" />
+            </button>
           </a>
+
+          <a href={project.github} target="_blank" rel="noopener noreferrer">
+            <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2">
+              <span>Visit GitHub</span>
+              <GithubIcon className="size-4" />
+            </button>
+          </a>
+        </div>
+
           </div>
           <div className="relative">
          <Image src={project.image} alt={project.title} className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:h-full lg:w-auto lg:max-w-none" />
